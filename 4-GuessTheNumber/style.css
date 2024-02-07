@@ -89,4 +89,9 @@ html {
     font-size: 16px;
     text-align: center;
   }
+
+  #newGame{
+    cursor: pointer;
+    background-color: #141414;
+  }
   
