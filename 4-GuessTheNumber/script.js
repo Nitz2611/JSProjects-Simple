@@ -58,7 +58,7 @@ function checkGuess(guess) {
 }
 
 function displayGuess(guess) {
-    //adding previous guesses and decreasing guess
+    //clearing input adding previous guesses and decreasing guess
     userInput.value = ''
     guessSlot.innerHTML += `${guess} `
     numGuess++;
@@ -72,6 +72,7 @@ function displayMessage(message) {
 }
 
 function endGame() {
+    //ending game over
     userInput.value = ''
     userInput.setAttribute('disabled', '')
     p.classList.add('button')
@@ -82,6 +83,7 @@ function endGame() {
     
 }
 function newGame() {
+    //restarting game by resetting values to initial
    const newGameButton = document.querySelector('#newGame')
    newGameButton.addEventListener('click', (e) =>{
     randomNumber = parseInt(Math.random() * 100 + 1);
